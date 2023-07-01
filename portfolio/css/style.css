@@ -10,6 +10,9 @@ body, header, nav, main, footer, img, h1, h3, ul {
     padding: 0;
     border: 0;
 }
+ * {
+    font-family: 'Roboto Mono', monospace;
+ }
 
 /* Style rules for body and images */
 body {
@@ -36,18 +39,30 @@ img {
 .mobile h1 {
     padding: 2%;
     text-align: center;
-    font-family: 'Emblema One', cursive;
-
+    font-family: 'Roboto Mono', monospace;
 }
 .mobile h3 {
     padding: 2%;
     text-align: center;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Style rules for header area */
+header {
+    background-color: #000000;
+    color: #f6eee4;
+    padding: 2%;
+    border-bottom: 1px solid #666666;
+}
+
+header h1, header h2, header h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
 }
 
 /* Style rules for navigation area */
 nav {
-    background-color: #0f0f0f;
+    background-color: #000000;
 }
 
 nav ul {
@@ -60,8 +75,6 @@ nav li {
     border-top: 0.5px solid #f6eee4;
     font-size: 1.5em;
     padding: 0.5em;
-    font-family: Geneva, Arial, sans-serif;
-    font-weight: bold;
 }
 
 nav li a {
@@ -76,7 +89,7 @@ nav li a {
 /* Style rules for main content */
 main {
     padding: 2%;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 main p {
@@ -88,7 +101,7 @@ main h3 {
 }
 
 main ul {
-    list-style-type: square
+    list-style-type: none;
 }
 
 .link {
@@ -108,6 +121,15 @@ main ul {
     border-radius: 6px;
 }
 
+.centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle-img {
+    border-radius: 50%;
+}
+
 #info ul {
     margin-left: 10%;
 }
@@ -116,21 +138,6 @@ main ul {
     text-align: center;
 }
 
-.tel-link {
-    background-color: #2a1f14;
-    padding: 2%;
-    width: 80%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.tel-link a {
-    color: #f6eee4;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 /* Style rules for footer content */
 footer {
@@ -140,6 +147,7 @@ footer {
     color: #f6eee4;
     padding-top: 1%;
     padding-bottom: 1%;
+    font-family: 'Roboto Mono', monospace;
 }
 
 footer a {
